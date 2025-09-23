@@ -15,6 +15,7 @@
         combo_space2enter {
             bindings = <&kp ENTER>;
             key-positions = <39 23>;
+            timeout-ms = <250>;
         };
 
         combo_locknumpad {
