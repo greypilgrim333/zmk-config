@@ -64,10 +64,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP    &kp HOME          &kp UP_ARROW    &kp END            &none   &kp DELETE
-&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &trans  &trans
-&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &trans         &kp LG(LC(LEFT))  &kp LG(TAB)     &kp LC(LG(RIGHT))  &trans  &trans
-                            &kp LGUI  &trans  &trans    &mt DEL SPACE  &trans            &kp RC(RALT)
+&kp ESCAPE  &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP             &kp HOME          &kp UP_ARROW    &kp END            &none              &kp DELETE
+&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN           &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT          &trans             &trans
+&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &kp LS(LG(LEFT_ARROW))  &kp LG(LC(LEFT))  &kp LG(TAB)     &kp LC(LG(RIGHT))  &kp LS(LG(RIGHT))  &trans
+                            &kp LGUI  &trans  &trans    &mt DEL SPACE           &trans            &kp RC(RALT)
             >;
         };
 
