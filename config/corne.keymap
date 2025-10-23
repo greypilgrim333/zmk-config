@@ -116,7 +116,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
 &trans  &sl 4   &trans  &trans  &trans  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &parens          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &Tap_to_0     &trans
-                        &trans  &trans  &trans    &trans           &kp KP_NUMBER_0  &kp PERIOD
+                        &trans  &trans  &trans    &to 0            &kp KP_NUMBER_0  &kp PERIOD
             >;
         };
 
