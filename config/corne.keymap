@@ -32,6 +32,13 @@
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "PARENS";
         };
+
+        release: release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RS(LA(RA(RC(LG(RG(LEFT_CONTROL)))))))>;
+            label = "RELEASE";
+        };
     };
 
     behaviors {
@@ -80,10 +87,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP             &kp HOME                &kp LG(TAB)   &kp END            &none    &kp DELETE
-&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN           &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW  &kp LG(LC(RIGHT))  &trans   &trans
-&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &kp LS(LG(LEFT_ARROW))  &kp LEFT                &kp DOWN      &kp RIGHT          &parens  &trans
-                            &kp LGUI  &trans  &trans    &mt DEL SPACE           &trans                  &kp RC(RALT)
+&kp ESCAPE  &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP    &kp HOME                &kp LG(TAB)   &kp END            &none     &kp DELETE
+&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW  &kp LG(LC(RIGHT))  &trans    &trans
+&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &parens        &kp LEFT                &kp DOWN      &kp RIGHT          &release  &trans
+                            &kp LGUI  &trans  &trans    &mt DEL SPACE  &trans                  &kp RC(RALT)
             >;
         };
 
