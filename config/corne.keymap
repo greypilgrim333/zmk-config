@@ -89,7 +89,7 @@
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP    &kp HOME                &kp LG(TAB)   &kp END            &none     &kp DELETE
 &trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW  &kp LG(LC(RIGHT))  &trans    &trans
-&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &parens        &kp LEFT                &kp DOWN      &kp RIGHT          &release  &trans
+&kp LSHFT   &trans  &trans  &trans    &trans  &trans    &trans         &kp LEFT                &kp DOWN      &kp RIGHT          &release  &trans
                             &kp LGUI  &trans  &trans    &mt DEL SPACE  &trans                  &kp RC(RALT)
             >;
         };
@@ -105,7 +105,7 @@
 
             bindings = <
 &kp ESCAPE            &kp EXCL    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &parens   &kp PRINTSCREEN  &kp DEL
-&kp ENTER             &trans      &trans        &trans        &trans        &out OUT_TOG    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH         &kp GRAVE
+&kp ENTER             &trans      &trans        &trans        &release      &out OUT_TOG    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH         &kp GRAVE
 &kp LA(LEFT_CONTROL)  &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE         &kp TILDE
                                                 &kp LGUI      &trans        &trans          &trans     &trans     &kp RALT
             >;
@@ -113,10 +113,10 @@
 
         Numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
-&trans  &sl 4   &trans  &trans  &trans  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &parens          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &Tap_to_0     &trans
-                        &trans  &trans  &trans    &to 0            &kp KP_NUMBER_0  &kp PERIOD
+&trans  &trans        &trans  &trans  &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &trans
+&trans  &kp LEFT_ALT  &trans  &trans  &trans  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
+&trans  &trans        &trans  &trans  &trans  &trans    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &Tap_to_0     &trans
+                              &trans  &trans  &trans    &to 0            &kp KP_NUMBER_0  &kp PERIOD
             >;
         };
 
