@@ -22,6 +22,10 @@
         combo_locknumpad {
             bindings = <&tog 3>;
             key-positions = <39 40>;
+            slow-release;
+            timeout-ms = <1>;
+            require-prior-idle-ms = <900>;
+            layers = <0>;
         };
     };
 
@@ -90,10 +94,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp EXCL    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &trans    &kp PRINTSCREEN  &kp DEL
-&kp ENTER   &trans      &trans        &trans        &release      &out OUT_TOG    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH         &kp GRAVE
-&sl 4       &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE         &kp TILDE
-                                      &kp LGUI      &trans        &trans          &trans     &trans     &kp RALT
+&kp ESCAPE      &kp EXCL    &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &none     &kp PRINTSCREEN  &kp DEL
+&bt BT_CLR_ALL  &none       &none         &none         &release      &out OUT_TOG    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH         &kp GRAVE
+&sl 4           &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE         &kp TILDE
+                                          &kp LGUI      &none         &none           &trans     &none      &kp RALT
             >;
         };
 
